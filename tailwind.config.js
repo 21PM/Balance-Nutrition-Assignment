@@ -6,10 +6,16 @@ export default {
   ],
   theme: {
     extend: {
+      backgroundImage: {
+        'hero-image': '../Images/BgImageCoverPage.jpeg',
+        'footer-texture': "url('/img/footer-texture.png')",
+      },
       screens: {
 
 
         '2xs':'50px',
+
+        
 
         'xs':'480px',
 
