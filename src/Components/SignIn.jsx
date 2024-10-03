@@ -113,7 +113,7 @@ function SignIn() {
 
 
                      {/* //Send OTP Button */}
-                     <div style={{backgroundColor:phone.length < 4 ? "#B9B9B9" : "#03989F"}} className='md:w-[519px] md:h-[48px] 2xs:w-[295px] 2xs:-h-[48px] border-2 border-black rounded-[30px]' >
+                     <div style={{backgroundColor:phone.length < 4 ? "#B9B9B9" : "#03989F"}} className='md:w-[519px] md:h-[48px] 2xs:w-[295px] 2xs:-h-[48px] text-white rounded-[30px]' >
                             <button className='md:w-full md:h-full 2xs:w-full 2xs:h-[48px] font-normal rounded-[30px] text-[17px] leading-[22px]' onClick={handleSendOTP}>
                             Send OTP
                             </button>
