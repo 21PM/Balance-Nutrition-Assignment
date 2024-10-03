@@ -1,16 +1,35 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import PhoneInput from "react-phone-input-2"
 import 'react-phone-input-2/lib/style.css';
 import { FcGoogle } from "react-icons/fc";
+import { parsePhoneNumberFromString } from 'libphonenumber-js';
+import { useDispatch } from 'react-redux';
+import { setIsSendOTP, setMobileNo } from '../Slice/Slice';
+
 
 function SignIn() {
 
   const [phone, setPhone] = useState('');
 
+  
+  const dispatch = useDispatch()
+
+  function handleSendOTP(){
+        console.log(phone);
+        dispatch(setMobileNo(phone))
+        dispatch(setIsSendOTP(true))
+        
+  }
+
+  useEffect(()=>{
+
+    // consol.log(phone);
+    
+  },[])
 
   return (
     <>
-        <div className='md:w-[579px] md:h-[438px] 2xs:w-[335px] w-fit rounded-[15px] flex flex-col items-center justify-center md:gap-[64px] md:p-[30px] 2xs:p-[20px] 2xs:gap-[20px] 2xs:h-[349px] bg-white'>
+        <div className='md:w-[579px] md:h-[438px] 2xs:w-[335px] w-fit rounded-[15px] flex flex-col items-center justify-center md:gap-[64px] md:p-[30px] 2xs:p-[20px] 2xs:gap-[20px] 2xs:h-[349px] bg-white shadow-[0px_0px_10px_0px_#7F7F7F26]'>
 
                     {/* //SignIn Form upper Div */}
                     <div className='md:w-[519px] md:min-h-[266px] 2xs:w-[300px] 2xs:h-[349px] flex flex-col justify-between'>
@@ -27,7 +46,7 @@ function SignIn() {
                                           <div className="flex justify-center items-center h-full"> {/* Changed to h-full */}
                                                 <div className="w-full max-w-full border-b-2">
                                                   <PhoneInput
-                                                    className='bg-none'
+                                                    className='bg-nhaone'
                                                     country={'in'} // Default country
                                                     value={phone}  // Controlled input value
                                                     onChange={setPhone}  // Update phone state
@@ -94,8 +113,8 @@ function SignIn() {
 
 
                      {/* //Send OTP Button */}
-                     <div className='md:w-[519px] md:h-[48px] 2xs:w-[295px] 2xs:-h-[48px] border-2 border-black rounded-[30px]' >
-                            <button className='md:w-full md:h-full 2xs:w-full 2xs:h-[48px] font-normal rounded-[30px] text-[17px] leading-[22px]' style={{backgroundColor:"#B9B9B9",color:"#FFFFFF"}}>
+                     <div style={{backgroundColor:phone.length < 4 ? "#B9B9B9" : "#03989F"}} className='md:w-[519px] md:h-[48px] 2xs:w-[295px] 2xs:-h-[48px] border-2 border-black rounded-[30px]' >
+                            <button className='md:w-full md:h-full 2xs:w-full 2xs:h-[48px] font-normal rounded-[30px] text-[17px] leading-[22px]' onClick={handleSendOTP}>
                             Send OTP
                             </button>
                      </div>

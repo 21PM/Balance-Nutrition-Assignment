@@ -37,7 +37,8 @@ export default {
         // => @media (min-width: 1536px) { ... }
       },
       colors:{
-        CustomeTeal:'#03989F'
+        CustomeTeal:'#03989F',
+        Customgray:"#B9B9B9"
       }
     },
   },

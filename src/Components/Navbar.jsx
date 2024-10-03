@@ -6,7 +6,7 @@ import OfferBar from './OfferBar'
 function Navbar() {
   return (
     <>
-        <nav className='min-h-[132px]  lg:w-[vw] border-2 border-purple-600'>
+        <nav className='min-h-[132px]  lg:w-[vw] '>
                 <MenuBar/>
                 <OfferBar/>
         </nav>

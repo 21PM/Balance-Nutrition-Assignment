@@ -4,8 +4,8 @@ function MenuBar() {
   return (
     <>
       {/* ******************************************* Website View Code ************************************************** */}
-      <div className="2xs:h-[80px] 1md:min-h-[80px]  py-[20px]  2xs:px-[20px] lg:px-[80px] border-2  border-green-600 bg-white flex items-center xl:gap-[222px] md:gap-[50px] 2xs:justify-between">
-        <div class="1md:w-[56px] md:h-[56px] 2xs:w-[29.55px] 2xs:h-[34px] border-2 border-orange-600 flex items-center justify-center ">
+      <div className="2xs:h-[80px] 1md:min-h-[80px]  py-[20px]  2xs:px-[20px] lg:px-[80px]  bg-white flex items-center xl:gap-[222px] md:gap-[50px] 2xs:justify-between">
+        <div class="1md:w-[56px] md:h-[56px] 2xs:w-[29.55px] 2xs:h-[34px]  flex items-center justify-center ">
           <svg
           className="md:block 2xs:hidden"
             width="55"
@@ -51,11 +51,11 @@ function MenuBar() {
 
 
           
-        <div className="2xl:w-[994px] xl:w-[820px]  lg:w-[740px] md:w-[650px] min-h-[38px] border-2 md:flex 2xs:hidden flex lg:gap-[40px] md:gap-[20px] border-purple-500 items-center justify-center">
+        <div className="2xl:w-[994px] xl:w-[820px]  lg:w-[740px] md:w-[650px] min-h-[38px] md:flex 2xs:hidden flex lg:gap-[40px] md:gap-[20px] items-center justify-center">
           {/* // All List Items  */}
           <div className="w-[754px] h-[38px] font-normal xl:text-[16px] md:text-[12px] leading-[22px] flex items-center justify-between">
             {/* //Programs button List Items*/}
-            <div className="h-[38px] border-2 flex items-center justify-center">
+            <div className="h-[38px] flex items-center justify-center">
               <ul>
                 <p className="font-lato cursor-pointer font-normal  flex items-center justify-center">
                   Programs{" "}
@@ -90,17 +90,17 @@ function MenuBar() {
             </div>
 
             {/* //Sucess Stories Button*/}
-            <div className="h-[38px] border-2 grid place-items-center">
+            <div className="h-[38px] grid place-items-center">
               <p>Success Stories</p>
             </div>
 
             {/* //Meet Khyati Tab*/}
-            <div className="h-[38px] border-2 grid place-items-center">
+            <div className="h-[38px] grid place-items-center">
               <p>Meet Khyati</p>
             </div>
 
             {/* //About Us List Items*/}
-            <div className="h-[38px] border-2 grid place-items-center">
+            <div className="h-[38px]  grid place-items-center">
               <ul>
                 <li>
                   <p>About Us</p>
@@ -111,19 +111,19 @@ function MenuBar() {
             </div>
 
             {/* //Health Reads Button*/}
-            <div className="h-[38px] border-2 grid place-items-center">
+            <div className="h-[38px]  grid place-items-center">
               <p>Health Reads</p>
             </div>
 
             {/* //Receipes Button*/}
 
-            <div className="h-[38px]  border-2 grid place-items-center">
+            <div className="h-[38px]  grid place-items-center">
               <p>Recipes</p>
             </div>
           </div>
 
           {/* // Book Consultation Button  and Profile Logo single div*/}
-          <div className="h-[38px] border-2 flex items-center gap-[10px]  border-red-700">
+          <div className="h-[38px] flex items-center gap-[10px]  border-red-700">
             {/* // Book Consultation Button */}
             <button className="w-[164px] h-[36px] rounded-[60px] text-[15px] leading-[18px] bg-CustomeTeal text-white ">
               Book consultation
@@ -156,7 +156,7 @@ function MenuBar() {
 
 
           {/* Menu Incon Logo on mobile view */}
-          <div className="w-[40px] border-2 border-green-900 h-[40px] md:hidden 2xs:block">
+          <div className="w-[40px]  h-[40px] md:hidden 2xs:block">
           <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M6.6665 10H33.3332" stroke="#03989F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
           <path d="M6.6665 20H23.3332" stroke="#03989F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
