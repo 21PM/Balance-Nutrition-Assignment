@@ -102,8 +102,13 @@ function MenuBar() {
             {/* //About Us List Items*/}
             <div className="h-[38px]  grid place-items-center">
               <ul>
-                <li>
+                <li className="flex items-center justify-center cursor-pointer gap-1">
                   <p>About Us</p>
+                  <svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M1 1L5 5L9 1" stroke="#242221" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M1 1L5 5L9 1" stroke="white" stroke-opacity="0.2" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+
                 </li>
 
                 {/* <li> Items will be listed here </li> */}
